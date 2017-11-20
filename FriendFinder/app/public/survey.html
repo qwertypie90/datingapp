@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SURVEY TIME!</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1> Survey Questions </h1>
+        <br>
+        <hr class="style2">
+        <form>
+            <h3> - About You - </h3>
+            <br>
+            <h4> Name(Required) </h4>
+            <input type="text" name="name" id="name">
+            <h4> Link To Photo Image </h4>
+            <input type="text" name="photo" id="photo">
+        </form>
+        <br>
+        <hr class="style2">
+        <h3> Question 1 </h3> Your mind is always buzzing with unexplored ideas and plans
+        <form>
+            <input type="radio" name="one" value=1 checked> 1
+            <br>
+            <input type="radio" name="one" value=2> 2
+            <br>
+            <input type="radio" name="one" value=3> 3
+            <br>
+            <input type="radio" name="one" value=4> 4
+            <br>
+            <input type="radio" name="one" value=5> 5
+        </form>
+        <h3> Question 2 </h3> Generally speaking, you rely more on your experience than your imagination.
+        <form>
+            <input type="radio" name="two" value=1 checked> 1
+            <br>
+            <input type="radio" name="two" value=2> 2
+            <br>
+            <input type="radio" name="two" value=3> 3
+            <br>
+            <input type="radio" name="two" value=4> 4
+            <br>
+            <input type="radio" name="two" value=5> 5
+        </form>
+        <h3> Question 3 </h3> You find it easy to stay relaxed and focused even when there is some pressure.
+        <form>
+            <input type="radio" name="three" value=1 checked> 1
+            <br>
+            <input type="radio" name="three" value=2> 2
+            <br>
+            <input type="radio" name="three" value=3> 3
+            <br>
+            <input type="radio" name="three" value=4> 4
+            <br>
+            <input type="radio" name="three" value=5> 5
+        </form>
+        <h3> Question 4 </h3> You rarely do something just out of sheer curiosity.
+        <form>
+            <input type="radio" name="four" value=1 checked> 1
+            <br>
+            <input type="radio" name="four" value=2> 2
+            <br>
+            <input type="radio" name="four" value=3> 3
+            <br>
+            <input type="radio" name="four" value=4> 4
+            <br>
+            <input type="radio" name="four" value=5> 5
+        </form>
+        <h3> Question 5 </h3> People can rarely upset you.
+        <form>
+            <input type="radio" name="five" value=1 checked> 1
+            <br>
+            <input type="radio" name="five" value=2> 2
+            <br>
+            <input type="radio" name="five" value=3> 3
+            <br>
+            <input type="radio" name="five" value=4> 4
+            <br>
+            <input type="radio" name="five" value=5> 5
+        </form>
+        <h3> Question 6 </h3> It is often difficult for you to relate to other people’s feelings.
+        <form>
+            <input type="radio" name="six" value=1 checked> 1
+            <br>
+            <input type="radio" name="six" value=2> 2
+            <br>
+            <input type="radio" name="six" value=3> 3
+            <br>
+            <input type="radio" name="six" value=4> 4
+            <br>
+            <input type="radio" name="six" value=5> 5
+        </form>
+        <h3> Question 7 </h3> In a discussion, truth should be more important than people’s sensitivities.
+        <form>
+            <input type="radio" name="seven" value=1 checked> 1
+            <br>
+            <input type="radio" name="seven" value=2> 2
+            <br>
+            <input type="radio" name="seven" value=3> 3
+            <br>
+            <input type="radio" name="seven" value=4> 4
+            <br>
+            <input type="radio" name="seven" value=5> 5
+        </form>
+        <h3> Question 8 </h3> You rarely get carried away by fantasies and ideas.
+        <form>
+            <input type="radio" name="eight" value=1 checked> 1
+            <br>
+            <input type="radio" name="eight" value=2> 2
+            <br>
+            <input type="radio" name="eight" value=3> 3
+            <br>
+            <input type="radio" name="eight" value=4> 4
+            <br>
+            <input type="radio" name="eight" value=5> 5
+        </form>
+        <h3> Question 9 </h3> You think that everyone’s views should be respected regardless of whether they are supported by facts or not.
+        <form>
+            <input type="radio" name="nine" value=1 checked> 1
+            <br>
+            <input type="radio" name="nine" value=2> 2
+            <br>
+            <input type="radio" name="nine" value=3> 3
+            <br>
+            <input type="radio" name="nine" value=4> 4
+            <br>
+            <input type="radio" name="nine" value=5> 5
+        </form>
+        <h3> Question 10 </h3> You feel more energetic after spending time with a group of people.
+        <form>
+            <input type="radio" name="ten" value=1 checked> 1
+            <br>
+            <input type="radio" name="ten" value=2> 2
+            <br>
+            <input type="radio" name="ten" value=3> 3
+            <br>
+            <input type="radio" name="ten" value=4> 4
+            <br>
+            <input type="radio" name="ten" value=5> 5
+        </form>
+        <br>
+        <button type="button" id="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
+    </div>
+    <script>
+
+
+
+    var arr = [];
+
+
+    $("#submit").on("click", function(event) {
+        event.preventDefault();
+        console.log("button WORKS!")
+
+        // The Following Code Is Getting The Scores and pushing them to the arr array
+        var answers = [
+            $('input:radio[name="one"]:checked').val(),
+            $('input:radio[name="two"]:checked').val(),
+            $('input:radio[name="three"]:checked').val(),
+            $('input:radio[name="four"]:checked').val(),
+            $('input:radio[name="five"]:checked').val(),
+            $('input:radio[name="six"]:checked').val(),
+            $('input:radio[name="seven"]:checked').val(),
+            $('input:radio[name="eight"]:checked').val(),
+            $('input:radio[name="nine"]:checked').val(),
+            $('input:radio[name="ten"]:checked').val()
+        ];
+
+        for (var i = 0; i < answers.length; i++) { answers[i] = parseInt(answers[i], 10); }
+        // arr.push(answers)
+        // console.log(arr)
+        console.log(answers)
+
+        // The Following Code Is Getting The Score Array, The Name and Photo URL and pushing them to an object inside of matches
+
+        var newFriend = {
+            name: $("#name").val().trim(),
+            photo: $("#photo").val().trim(),
+            scores: [answers]
+        };
+
+        console.log(newFriend)
+
+   
+      $.post("/api/matches", newFriend,
+        function(data) {
+
+            console.log("Yay! You are officially booked!");
+          
+
+        });
+
+    });
+
+    </script>
+</body>
+
+</html>
