@@ -12,9 +12,9 @@ var Friend = function(name, photo, scores) {
 };
 
 // pre-made friends
-var ahmed = new Friend("Ahmed", "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg", [5,1,4,4,5,1,2,5,4,1]);
-var spunky = new Friend("SPUNKY", "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg", [5,1,4,4,5,1,2,5,4,1]);
-var liverfieldz = new Friend("LiverfieldZz", "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg", [5,1,4,4,5,1,2,5,4,1]);
+var ahmed = new Friend("Ahmed", "https://i.imgflip.com/1dg2tf.jpg", [2,2,3,4,5,1,3,5,5,5]);
+var spunky = new Friend("SPUNKY", "https://hips.hearstapps.com/cos.h-cdn.co/assets/cm/14/25/53a04e63ede00_-_cos-daniel-tosh-xl.jpg", [1,1,1,1,1,1,2,1,5,5]);
+var liverfieldz = new Friend("LiverfieldZz", "http://www.desitvbox4.com/wp-content/uploads/2017/10/ZEE-TV-Sa-Re-Ga-Ma-Pa-Li%E2%80%99l-Champs-500x500_c.jpg", [5,1,3,4,5,1,2,3,4,1]);
 
 matches.push(ahmed, spunky, liverfieldz)
 
