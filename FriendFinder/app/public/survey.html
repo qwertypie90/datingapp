@@ -150,7 +150,9 @@
     <script>
 
 
-
+if (typeof jQuery !== 'undefined') {
+   jQuery.ajaxSettings.traditional = true;
+}
     var arr = [];
 
 
@@ -182,7 +184,7 @@
         var newFriend = {
             name: $("#name").val().trim(),
             photo: $("#photo").val().trim(),
-            scores: [answers]
+            scores: answers
         };
 
         console.log(newFriend)
@@ -190,8 +192,7 @@
    
       $.post("/api/matches", newFriend,
         function(data) {
-
-            console.log("Yay! You are officially booked!");
+            console.log("Yay!");
           
 
         });

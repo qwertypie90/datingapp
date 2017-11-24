@@ -31,7 +31,8 @@ module.exports = function(app) {
         // ---------------------------------------------------------------------------
 
         app.post("/api/matches", function(req, res) {
-
+     matches.push(req.body);
+      res.json(true);
                
             })
       }
