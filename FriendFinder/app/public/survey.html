@@ -6,8 +6,11 @@
     <title>SURVEY TIME!</title>
     <!-- Latest compiled and minified CSS -->
    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cerulean/bootstrap.min.css" rel="stylesheet" integrity="sha384-zF4BRsG/fLiTGfR9QL82DrilZxrwgY/+du4p/c7J72zZj+FLYq4zY00RylP9ZjiT" crossorigin="anonymous">
+   <link rel="stylesheet" href="style.css">
         <script src="https://code.jquery.com/jquery.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+
 </head>
 
 <body>
@@ -226,7 +229,7 @@ if (typeof jQuery !== 'undefined') {
 //     console.log("YAYB")
 // }
                 if (data.name !== undefined) {
-                    matchStatus.html('Your match...');
+                    matchStatus.html('Your DREAM BOAT SUPREME...');
                     modalBody.html('<p>...is ' + data.name + '!</p><img src="' + data.photo + '" height="200">');
                 } else {
                     // If no match, show this
@@ -235,13 +238,6 @@ if (typeof jQuery !== 'undefined') {
                 }
                 // Toggle modal on
                 $('.modal').modal('toggle');
-            // }) else {
-            //     // If the form was not valid, this error is shown
-            // matchStatus.html('Error...');
-            // modalBody.html('Please answer all questions on the form.');
-            // // Toggle modal on
-            // $('.modal').modal('toggle');
-        // };
     })
         });
 
